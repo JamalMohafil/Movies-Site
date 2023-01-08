@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumanji: Welcome to the jungle</title>
+    <!----- LINK TO CSS ----->
+    <link rel="stylesheet" href="style.css">
+    <!------ FAV ICON ------>
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
+    <!----- UNI ICON ----->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+ <!-- load all Font Awesome v6 styles -->
+ <link href="/your-path-to-fontawesome/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!--- START HEADER  --->
+    <div class="scroller"></div>
+
+<header>
+    
+    <div class="nav container">
+<!--- LOGO --->
+
+<a href="./index.html" class="logo">
+    Movie<span>Vel</span>
+</a>
+<!---- SEARCH BOX ---->
+<div class="search-box">
+    <input type="search" id="search-input" placeholder="Search movie">
+    <i class="uil uil-search"></i>
+</div>
+
+<!--- USER --->
+<a href="#" class="user">
+<img src="img/user.jpg" alt="" class="user-img">
+</a>
+
+<!--- NAVBAR--->
+
+<div class="navbar">
+    <a href="index.html" class="nav-link nav-active">
+        <i style="font-weight: bolder;" class="uil uil-home"></i>
+        <span class="nav-link-title">Home</span>
+    </a>
+    <a href="#home" class="nav-link">
+        <i class="uil uil-fire"></i>
+        <span class="nav-link-title">Trending</span>
+    </a>
+    <a href="#home" class="nav-link">
+        <i class="uil uil-compass"></i>
+        <span class="nav-link-title">Explore</span>
+    </a>
+    <a href="#home" class="nav-link">
+        <i class="uil uil-tv-retro"></i>
+        <span class="nav-link-title">Movies</span>
+    </a>
+    <a href="#home" class="nav-link">
+        <i class="uil uil-heart"></i>
+        <span class="nav-link-title">Favourite</span>
+    </a>
+</div>
+
+    </div>
+
+</header>
+    <!--- END HEADER  --->
+<!-- Play Movie Container -->
+<div class="play-container container">
+    <!-- Play Image -->
+<img src="./play-page/play-background.jpg" alt="" class="play-img">
+<!-- Play Text -->
+<div class="play-text">
+    <h2>Jumanji: Welcome to the jungle</h2>
+    <div class="rating">
+        <i class="fa-solid fa-star"></i>    
+        <i class="fa-solid fa-star"></i>    
+        <i class="fa-solid fa-star"></i>    
+        <i class="fa-solid fa-star"></i>    
+        <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <!-- Tags -->
+        <div class="tags">
+            <span>Action</span>
+            <span>Adventure</span>
+            <span>4K</span>
+        </div>
+            <a href="playpage.html" class="watch-btn">
+                <i class="uil uil-caret-right"></i>
+                <span>Watch The Trailer</span>
+            </a>
+        </div>
+
+        <!-- Play Btn -->
+       <i class="uil uil-caret-right play-movie"></i>
+<!-- Video Container -->
+<div class="video-container">
+    <div class="video-box">
+        <video src="./play-page/Jumanji.mp4" controls id="myvideo"></video>
+        <!-- Close Video Icon -->
+        <span id="close-video"><i class="fa-solid fa-xmark " ></i></span>
+        </div>
+</div>
+
+</div>
+<!-- About -->
+<div class="about-movie container">
+    <h2>Jumanji: Welcome to the jungle</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At fugit sint, labore maiores vero voluptates sed distinctio id tenetur esse?Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+<!-- Movie Cast -->
+<h2 class="cast-heading">Movie Cast</h2>
+<div class="cast">
+    <div class="cast-box">
+        <img src="./play-page/cast1.jpg" alt="" class="cast-img">
+        <span class="cast-title">Dwayne Johnson</span>
+    </div>
+    <div class="cast-box">
+        <img src="./play-page/cast2.jpg" alt="" class="cast-img">
+        <span class="cast-title">Karen Gillan </span>
+    </div>
+    <div class="cast-box">
+        <img src="./play-page/cast3.jpg" alt="" class="cast-img">
+        <span class="cast-title">Kiven Hart</span>
+    </div>
+    <div class="cast-box">
+        <img src="./play-page/cast4.jpg" alt="" class="cast-img">
+        <span class="cast-title">Jack Black</span>
+    </div>
+    <div class="cast-box">
+        <img src="./play-page/cast5.jpg" alt="" class="cast-img">
+        <span class="cast-title">Nick Jonas</span>
+    </div>
+    <div class="cast-box">
+        <img src="./play-page/cast6.jpg" alt="" class="cast-img">
+        <span class="cast-title">Madison Iseman</span>
+    </div>
+</div>
+</div>
+
+<div class="download">
+    <h2 class="download-title">
+        Download Movie
+    </h2>
+<div class="download-links">
+    <a href="./play-page/Jumanji.mp4" download>480px</a>
+    <a href="./play-page/Jumanji.mp4" download>720px</a>
+    <a href="./play-page/Jumanji.mp4" download>1080px</a>
+</div>
+</div>
+
+<!-- COPYRIGHT -->
+
+<div class="copyright">
+    <p>&#169;CarpoolVenom All Right Reserved</p>
+</div>
+
+
+
+    <!----= LINK TO JS =---->
+<script src="./js/all.min.js"></script>
+<script src="./main.js"></script>
+<script>
+    let playButton = document.querySelector(".play-movie")
+let video = document.querySelector(".video-container")
+let closebtn = document.querySelector("#close-video")
+let myvideo = document.querySelector("#myvideo")
+
+playButton.addEventListener("click",()=>{
+    video.classList.add("show-video");
+myvideo.play()
+})
+document.getElementById("close-video").addEventListener('click',function (){
+    document.getElementById("myvideo").pause()
+    document.querySelector(".video-container").classList.remove('show-video')
+})
+// Show Video
+
+
+</script>
+</body>
+</html>
